@@ -4,5 +4,8 @@
   "description": "Init Container for checking whether certain environment variables are available",
   "main": "lib/index.js",
   "author": "Utku Sarioglu <utkusarioglu@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.3"
+  }
 }
