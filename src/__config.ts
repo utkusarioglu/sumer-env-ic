@@ -20,6 +20,12 @@ assert(
   ['.env.LOG_LEVEL can only be one of the following values:'].join('\n')
 );
 
+assert(
+  !!process.env.HOSTNAME,
+  '.env.HOSTNAME is required. This value usually comes from k8s or docker'
+);
+
 export const NODE_ENV = process.env.NODE_ENV;
 export const VARS_TO_CHECK = process.env.VARS_TO_CHECK.split(',');
 export const LOG_LEVEL = process.env.LOG_LEVEL;
+export const HOSTNAME = process.env.HOSTNAME;
