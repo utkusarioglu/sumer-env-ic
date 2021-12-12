@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "label": "yarn build",
+      "detail": "Create production build"
+    },
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [],
+      "label": "yarn dev",
+      "detail": "Start development code"
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": [],
+      "label": "yarn start",
+      "detail": "Start development code"
+    },
+    {
+      "type": "npm",
+      "script": "clean-build-artifacts",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "yarn clean-build-artifacts",
+      "detail": "Clean artifacts created by build operation"
+    }
+  ]
+}
