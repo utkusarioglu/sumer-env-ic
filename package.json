@@ -1,0 +1,8 @@
+{
+  "name": "sumer-env-ic",
+  "version": "1.0.0",
+  "description": "Init Container for checking whether certain environment variables are available",
+  "main": "lib/index.js",
+  "author": "Utku Sarioglu <utkusarioglu@hotmail.com>",
+  "license": "MIT"
+}
