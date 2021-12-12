@@ -32,7 +32,7 @@ assert(
 );
 
 assert(
-  !process.env.RESTART_TIMEOUT || Number.isNaN(process.env.RESTART_TIMEOUT),
+  !process.env.RESTART_TIMEOUT || !Number.isNaN(process.env.RESTART_TIMEOUT),
   ".env.RESTART_TIMEOUT optional variable has to be a numeric value"
 );
 
