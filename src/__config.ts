@@ -1,6 +1,7 @@
 require('dotenv').config();
 import { strict as assert } from 'assert';
 import { nodeEnvTypes } from '_/__constants';
+import { LOG_LEVEL_KEYS } from '_services/logging/logging.constants';
 
 assert(
   !!process.env.NODE_ENV && nodeEnvTypes.includes(process.env.NODE_ENV),
@@ -16,8 +17,11 @@ assert(
 );
 
 assert(
-  !!process.env.LOG_LEVEL,
-  ['.env.LOG_LEVEL can only be one of the following values:'].join('\n')
+  !!process.env.LOG_LEVEL && LOG_LEVEL_KEYS.includes(process.env.LOG_LEVEL),
+  [
+    '.env.LOG_LEVEL can only be one of the following values:',
+    ...LOG_LEVEL_KEYS,
+  ].join('\n')
 );
 
 assert(
