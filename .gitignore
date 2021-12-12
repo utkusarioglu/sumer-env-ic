@@ -3,3 +3,4 @@ lib
 types
 *.env
 !example.env
+/tsbuildinfo.json
