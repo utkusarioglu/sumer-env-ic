@@ -5,6 +5,13 @@
   "main": "lib/index.js",
   "author": "Utku Sarioglu <utkusarioglu@hotmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "scripts/dev.sh",
+    "build": "scripts/build.sh",
+    "start": "node lib/index.js",
+    "clean-build-artifacts": "scripts/clean-build-artifacts.sh",
+    "clean-node-modules": "scripts/clean-node-modules.sh"
+  },
   "devDependencies": {
     "@types/node": "^16.11.12",
     "ts-node-dev": "^1.1.8",
