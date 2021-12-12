@@ -8,7 +8,8 @@
     "rootDir": "./src",
     "baseUrl": "./",
     "paths": {
-      "_/*": ["./src/*"]
+      "_/*": ["./src/*"],
+      "_services/*": ["./src/services/*"]
     },
     "declaration": true,
     "declarationMap": true,
