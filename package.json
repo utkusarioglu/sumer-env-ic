@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Init Container for checking whether certain environment variables are available",
   "main": "lib/index.js",
+  "types": "types/indes.d.ts",
   "author": "Utku Sarioglu <utkusarioglu@hotmail.com>",
   "license": "MIT",
   "scripts": {
