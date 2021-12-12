@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  env-ic:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    working_dir: /usr/src/app/env-ic
+    volumes:
+      - .:/usr/src/app/env-ic

@@ -1,0 +1,18 @@
+{
+  "name": "env-ic",
+  "dockerComposeFile": ["../docker-compose.dev.yml", "docker-compose.yml"],
+  "service": "env-ic",
+  "workspaceFolder": "/usr/src/app/env-ic",
+  "settings": {
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#443388"
+    }
+  },
+  "extensions": [],
+  "features": {
+    "kubectl-helm-minikube": {
+      "helm": "latest",
+      "kubectl": "latest"
+    }
+  }
+}
