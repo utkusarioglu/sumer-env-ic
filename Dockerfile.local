@@ -2,5 +2,6 @@ FROM node:17-slim as BUILDER
 WORKDIR /usr/src/app
 COPY env-ic env-ic
 WORKDIR /usr/src/app/env-ic
+RUN yarn
 RUN yarn build
 ENTRYPOINT yarn start
