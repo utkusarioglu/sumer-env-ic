@@ -1,5 +1,5 @@
 import loggerService from "_services/logging/logging.service";
-import { RESTART_TIMEOUT } from "_/__config";
+import { RESTART_TIMEOUT, VARS_TO_CHECK } from "_/__config";
 
 export function logIsIncluded(isIncluded: boolean, varToCheck: string) {
   !isIncluded && loggerService.debug(`"${varToCheck}" is not included in .env`);
@@ -23,5 +23,5 @@ export function logSuccess() {
 }
 
 export function logStarting() {
-  loggerService.debug("Starting");
+  loggerService.debug(`Starting checking for env vars: ${VARS_TO_CHECK.join(", ")}`);
 }
